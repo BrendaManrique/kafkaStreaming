@@ -1,0 +1,45 @@
+Wifi Galvanize members: ourmembersrock!
+
+IBM - Kafka  (Dane Lane - dale.lane@uk.ibm.com)
+------------------------
+sasha.williamson@ibm.com - Design Researcher
+
+Event driven
+Context sensitive
+
+APP PATTERNS
+Stream processing: Kafka streams, complex event processing, IBM streams
+Reactive microservices: Serverless computing, socketio, mqtt, web messaging
+Responsive apps: Kafka k tables, redis cassandra local cache. Not from event itself
+Intelligent apps: ML, NoSQL Storage
+Staging events: Change data capture, integration, connectors - strong loop
+
+Props of the central event backbone
+- Stream history
+Inmutable data
+Highly available
+Scalable consumption
+Many consumers
+
+Distributed event log, keeps events
+Stream procesing as a library, not as framework
+
+produce Topics - scale adding partitions, one leader
+One server is a broker
+consumer groups share the partitions
+consumer uses pointer, represents offset
+
+Consumer can choose how to commit offsets (ack that event was processed) !!
+- Synchronous, but slows down processing
+- Async, fairly safe but could re-process msgs
+- Automatic, might go faster than processing
+
+Compaction-Compacted topics are evolving data stores
+eliminates duplicate keys to minimize storage
+
+Streams:transform, join, filter, aggregate
+Define a serializer, apache avro syntax
+
+Kafka connectors:Mqtt, hdfs, elastic search. 
+Kafka
+
